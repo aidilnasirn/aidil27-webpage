@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Handlee|Raleway');
+
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+input:hover, textarea:hover{
+    outline: none;
+    box-shadow: 1px 1px 1px black isset;
+}
+
+body {
+    background-image: url('https://th.wallhaven.cc/lg/e7/e7jj6r.jpg');
+}
+
+header {
+    background-color: #0f255c;
+    display: flex;
+    border-bottom: 2px solid orange;
+    border-radius: 0px 0px 5px 5px;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    padding: 0 10px;
+    box-sizing: border-box;
+    top: 0;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.menu {
+    padding: 10px 0;
+    transition: border .2s linear;
+}
+
+.menu > div {
+    width: 25px;
+    height: 2.5px;
+    background-color: #333;
+    margin: 5px 0px;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 4px 0px 4px 0px;
+    transition: .5s;
+}
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px,8px);
+    transform: rotate(-45deg) translate(-6px,8px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-3px,-8px);
+    transform: rotate(45deg) translate(-3px,-8px);
+}
+
+hr {
+    border-color: #D5E5ED;
+}
+
+header h1 span {
+    color: rgb(192, 97, 0);
+}
+
+nav {
+    position: fixed;
+    left: -100px;
+    top:0;
+    background-color: rgb(2, 2, 2, 0.9);
+    width: 50%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 2px #222;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: transform .6s ease;
+}
+nav li:hover{
+    background-color: orange;
+    transition: .6s;
+    
+}
+
+
+.open {
+    left: 0px;
+    transform: translateX(0);
+}
+
+nav ul {
+    display: block;
+    list-style: none;
+    margin: 45px 0;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(165, 97, 0);
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+h3{
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+.container-fluid {
+    padding: 15px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+    font-family: 'Raleway';
+    background-color: #fff;
+    margin: 0;
+}
+
+.mt-5 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-radius: 10px 10px 0 0;
+    font-family: 'Comfortaa','sans-serif';
+    font-size: 32px;
+    text-align: center;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#about h2 {
+    background: url('https://th.wallhaven.cc/small/v9/v9kw9l.jpg') no-repeat;
+    background-size: 100%;
+    background-position: center; 
+}
+
+#services h2 {
+    background: url('https://th.wallhaven.cc/small/6o/6ozkzl.jpg') no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.qoute {
+    background-color: #efefef;
+    font-family: handlee;
+    font-size: 24px;
+    text-align: center;
+}
+
+#services img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 120%;
+    box-shadow: 0px 5px 30px grey;
+}
+
+.box {
+    margin: 15px auto;
+}
+
+#contact .container-fluid div {
+    margin: 20px auto;
+}
+
+#contact .container-fluid div input, #msg{
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contact label {
+    font-weight: 200px;
+    display: block;
+    color: #333;
+    padding: 20 0 10 0;
+}
+
+#contact .container-fluid button{
+    padding: 10px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px grey;
+    text-transform: uppercase;
+    background: #35424a;
+    border-radius: 4px;
+
+}
+
+
+#follow .container-fluid ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#follow ul li {
+    font-size: 35px;
+}
+#follow ul li a{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Raleway';
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #35424a;
+    border-radius: 10px 10px 0 0;
+}
